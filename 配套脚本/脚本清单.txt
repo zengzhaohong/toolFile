@@ -1,0 +1,28 @@
+编号	脚本名称		说明					
+101	Jforum-Rec.jmx		4.2.1章节Badboy录制的JMeter脚本
+102	Jforum-Reg.jmx		4.4.2章节关联示例脚本		
+103	Jforum4-1-01.jmx	5.3.2章节示例脚本			
+104	forEachTestPlan.jmx	6.1.1章节ForEach Controller示例脚本	
+105	SimpleTestPlan.jmx	6.1.2章节Simple Controller示例脚本	
+106	Jforum9-5-01.jmx	11.5.1章节示例脚本				
+107	Jforum9-5-02.jmx	11.5.2章节示例脚本			
+108	Jforum9-5-03.jmx	11.5.3章节示例脚本			
+109	Jforum9-7-2-01.jmx	11.7.2章节示例脚本一
+110	Jforum9-7-2-02.jmx	11.7.2章节示例脚本二
+
+
+Auto（Auto.zip）	第14章节涉及到的所有批处理文件
+建议通读完14章节再动手操作，在14.8章节对这些文件的使用有详细说明
+
+connectJenkins.bat（slave.jar）	Jmeter Master(Server)连接上jenkins服务器
+connetRemote.bat	开启JMeter远程运行的Agent（在slave机器上）
+generatePng.bat		生成图形结果
+copyscript.bat		脚本复制（在Windows机器上通过DOS命令来完成复制）
+remoteIpList.properties	  使用JmeterServerForScript.bat复制脚本时此配置用来指定JMeterSlave
+JmeterClientForScript.bat（JmeterClient.jar） 启动JMeter Slave的上的脚本复制Agent
+JmeterServerForScript.bat（JmeterServer.jar） 在JMeter Master机器上分发脚本到JMeter Slave
+startRmiJmeterRemote.bat（RmiJmeterRemote.jar）	RMI方式来传递指令（Jmeter远程负载机上运行）
+startRmiJmeterServer.bat（RmiJmeterServer.jar）	RMI方式来传递指令（JmeterServer上运行）
+PerformanceTestReport.html	HTML格式的报告模板
+report.bat	生成图形报告，与generatePng.bat功能类似，Jmeter Master上运行
+run.bat	运行测试，一般由Jenkins来调用

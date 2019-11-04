@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.12-SNAPSHOT.20150624">
+  <hashTree>
+    <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="正则表达式提取器" enabled="true">
+      <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+      <stringProp name="RegexExtractor.refname">moduleID</stringProp>
+      <stringProp name="RegexExtractor.regex">&lt;a class=&quot;forumlink&quot; href=&quot;.*show/(.*).page&quot;&gt;</stringProp>
+      <stringProp name="RegexExtractor.template">$1$</stringProp>
+      <stringProp name="RegexExtractor.default"></stringProp>
+      <stringProp name="RegexExtractor.match_number">1</stringProp>
+    </RegexExtractor>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
